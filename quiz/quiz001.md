@@ -1,4 +1,4 @@
-#this is the quiz 001 
+# this is the quiz 001 
 
 
 MD files, markdown documents, use symbols to change the format
@@ -11,20 +11,20 @@ MD files, markdown documents, use symbols to change the format
 '''
     ,py
 
-sentence = input("Enter a sentence: ")
+    sentence = input("Enter a sentence: ")
 
 
-#sentence = sentence.strip()
+    #sentence = sentence.strip()
 
 
-first_letter = sentence[0]
-last_letter = sentence[-1]
+    first_letter = sentence[0]
+    last_letter = sentence[-1]
 
 
-num_characters = len(sentence) - 2
+    num_characters = len(sentence) - 2
 
 
-print( first_letter, num_characters , last_letter)
+    print( first_letter, num_characters , last_letter)
 ''' 
 
 ## Proof of work 
