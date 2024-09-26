@@ -1,7 +1,3 @@
-Here's the updated `README.md` that includes the required libraries and instructions on how to install them:
-
----
-
 # Basic Notepad with Password Manager
 
 ## Overview
