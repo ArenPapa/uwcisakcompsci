@@ -26,6 +26,20 @@ Strong encryption techniques will be used in the notepad to safeguard confidenti
 
 ### Flow diagrams for algorithms
 
+[ Start ] 
+    |
+[ Load Passwords ]
+    |
+[ Load Notes ]
+    |
+[ Prompt: Start Notepad (yes/no)? ] 
+    |-------------------------------
+    |                               |
+ [yes]                          [no] 
+    |                               |
+[ Notepad Menu ]               [ Exit ]
+
+
 ### Data storage
 
 In this project, **data storage** relies on the use of the `pickle` module, which allows us to serialize Python objects and save them to a file. Serialization is the process of converting an object (like a dictionary or list) into a format that can be stored and later retrieved, which is particularly useful when working with persistent data.
