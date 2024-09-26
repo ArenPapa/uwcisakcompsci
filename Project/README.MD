@@ -68,6 +68,3 @@ Ensure the following files are available:
 - Make sure to keep your **master password** secure. It is used to decrypt stored passwords.
 - RSA keys will be generated automatically if they do not exist on the first run of the program.
   
----
-
-This version of the `README.md` file now includes the library installation steps for a smooth setup.
