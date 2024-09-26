@@ -59,6 +59,8 @@ Here’s how we handle data storage for different components:
 
 By using this approach, we ensure that all sensitive data (passwords, notes, tasks) is stored persistently and securely in a format that can be easily loaded back into the application.
 
+### Test plan
+
 ## Record of Tasks
 
 | Task Number | Planned Action                                          | Planned Outcome                                                               | Time Estimated | Target Completion Date | Criterion |
