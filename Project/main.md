@@ -56,7 +56,6 @@ Here’s how we handle data storage for different components:
 
 ## **Limitations and Security Considerations**
    - **Not Human-Readable:** Unlike JSON, which is human-readable, pickle files are binary, so you can't easily view or edit them manually.
-   - **Security Risks:** While `pickle` is convenient, it's not secure by itself. Loading untrusted pickle files can be dangerous because the deserialization process could potentially execute arbitrary code. In this case, we mitigate this risk by ensuring that all passwords are encrypted using RSA before being stored.
 
 By using this approach, we ensure that all sensitive data (passwords, notes, tasks) is stored persistently and securely in a format that can be easily loaded back into the application.
 
