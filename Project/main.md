@@ -23,3 +23,19 @@ Strong encryption techniques will be used in the notepad to safeguard confidenti
 9. the program should work for infinite amount of times.
 # Criterion B: Design
 ### System Diagram
+
+### Flow diagrams for algorithms
+
+### Sketches of the application (wireframe diagrams)
+![flawchart](https://github.com/user-attachments/assets/6e2214ec-0f84-4342-bd8e-c93928114897)
+
+## Record of Tasks
+
+| Task Number | Planned Action              | Planned Outcome                                                 | Time Estimated | Target Completion Date | Criterion |
+|-------------|-----------------------------|-----------------------------------------------------------------|----------------|------------------------|-----------|
+| 1           | 1st Meeting with the client | Obtained a problem definition, understand what the situation is | 10 min         | Sep 7                  | A         |
+|             |                             |                                                                 |                |                        |           |
+|             |                             |                                                                 |                |                        |           |
+|             |                             |                                                                 |                |                        |           |
+|             |                             |                                                                 |                |                        |           |
+
