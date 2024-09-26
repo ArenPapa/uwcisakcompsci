@@ -28,8 +28,7 @@ The program requires the following libraries. Use `pip` to install them:
 
 1. **Cryptography**: For RSA key generation and encryption
 2. **Colorama**: For colored terminal output
-3. **Playsound**: To play sound notifications
-4. **Pickle**: Standard Python library for object serialization (already included with Python)
+3. **Pickle**: Standard Python library for object serialization (already included with Python)
 
 ### How to Install Libraries
 To install the required libraries, run the following commands in your terminal:
@@ -44,12 +43,10 @@ If you're using a virtual environment, activate it before running these commands
 ### Resources to Download
 Ensure the following files are available:
 
-1. **`ding.mp3`**: An audio file used to play sound notifications. Place this file in the root directory of the program.
-
-2. **RSA Keys**:
+1. **RSA Keys**:
    - The program will automatically generate the necessary RSA key files (`private_key.pem`, `public_key.pem`) upon first running. These keys are used to encrypt and decrypt your passwords. Make sure these files are kept secure.
 
-3. **Optional**:
+2. **Optional**:
    - **`passwords.pkl`**: A file that stores the encrypted passwords.
    - **`notes.pkl`**: A file that stores the saved notes.
    
