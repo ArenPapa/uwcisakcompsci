@@ -24,6 +24,8 @@ Strong encryption techniques will be used in the notepad to safeguard confidenti
 # Criterion B: Design
 ### System Diagram
 
+![Untitled presentation](https://github.com/user-attachments/assets/8ed194ed-2541-440c-96a2-7cf46eec9db3)
+
 ### Flow diagrams for algorithms
 
 ![codetoflow](https://github.com/user-attachments/assets/bb216dad-024e-45fb-a4b7-78a000fa6970)
