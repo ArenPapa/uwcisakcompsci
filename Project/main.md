@@ -28,7 +28,7 @@ Strong encryption techniques will be used in the notepad to safeguard confidenti
 
 ### Sketches of the application (wireframe diagrams)
 
-<img width="629" alt="Screenshot 2024-09-26 at 4 34 43 PM" src="https://github.com/user-attachments/assets/e89d4a86-7bc9-4fb5-8a62-99bf3e2b55bb">
+
 
 ### Data storage
 
@@ -58,6 +58,10 @@ Here’s how we handle data storage for different components:
    - **Not Human-Readable:** Unlike JSON, which is human-readable, pickle files are binary, so you can't easily view or edit them manually.
 
 By using this approach, we ensure that all sensitive data (passwords, notes, tasks) is stored persistently and securely in a format that can be easily loaded back into the application.
+
+### Sketches of the application
+
+<img width="629" alt="Screenshot 2024-09-26 at 4 34 43 PM" src="https://github.com/user-attachments/assets/e89d4a86-7bc9-4fb5-8a62-99bf3e2b55bb">
 
 ### Test plan
 
