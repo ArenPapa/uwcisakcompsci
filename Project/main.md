@@ -26,18 +26,8 @@ Strong encryption techniques will be used in the notepad to safeguard confidenti
 
 ### Flow diagrams for algorithms
 
-[ Start ] 
-    |
-[ Load Passwords ]
-    |
-[ Load Notes ]
-    |
-[ Prompt: Start Notepad (yes/no)? ] 
-    |-------------------------------
-    |                               |
- [yes]                          [no] 
-    |                               |
-[ Notepad Menu ]               [ Exit ]
+![codetoflow](https://github.com/user-attachments/assets/bb216dad-024e-45fb-a4b7-78a000fa6970)
+
 
 
 ### Data storage
