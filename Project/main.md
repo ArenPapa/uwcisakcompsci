@@ -27,12 +27,14 @@ Strong encryption techniques will be used in the notepad to safeguard confidenti
 ### Flow diagrams for algorithms
 
 ### Sketches of the application (wireframe diagrams)
-![flawchart](https://github.com/user-attachments/assets/6e2214ec-0f84-4342-bd8e-c93928114897)
+
+<img width="629" alt="Screenshot 2024-09-26 at 4 34 43 PM" src="https://github.com/user-attachments/assets/e89d4a86-7bc9-4fb5-8a62-99bf3e2b55bb">
 
 ## Record of Tasks
 
 | Task Number | Planned Action              | Planned Outcome                                                 | Time Estimated | Target Completion Date | Criterion |
 |-------------|-----------------------------|-----------------------------------------------------------------|----------------|------------------------|-----------|
+
 | 1           | 1st Meeting with the client | Obtained a problem definition, understand what the situation is | 10 min         | Sep 7                  | A         |
 |             |                             |                                                                 |                |                        |           |
 |             |                             |                                                                 |                |                        |           |
