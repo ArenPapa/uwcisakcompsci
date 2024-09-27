@@ -108,7 +108,7 @@ This test plan will cover:
 
 - **Operating System**: Windows, Linux, or macOS
 - **Python version**: 3.x
-- **Dependencies**: `colorama`, `cryptography`, `pickle`, `playsound`
+- **Dependencies**: `colorama`, `cryptography`, `pickle`,
 - **Test Data**: Use dummy data for notes and passwords.
 
 ---
