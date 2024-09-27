@@ -65,7 +65,139 @@ By using this approach, we ensure that all sensitive data (passwords, notes, tas
 
 <img width="629" alt="Screenshot 2024-09-26 at 4 34 43 PM" src="https://github.com/user-attachments/assets/e89d4a86-7bc9-4fb5-8a62-99bf3e2b55bb">
 
-### Test plan
+## Test plan
+
+Here’s a **test plan** for the provided Python application that focuses on the notepad and password management functionalities, including encryption, decryption, and user interactions.
+
+---
+
+### **Test Plan for Notepad and Password Management Application**
+
+#### **1. Overview**
+
+The goal of this test plan is to verify the correct functionality of the Notepad and Password management system, including RSA encryption, decryption, and note-taking. The application allows users to add, retrieve, and delete notes as well as store and manage passwords securely using RSA encryption.
+
+---
+
+### **2. Test Scope**
+
+This test plan will cover:
+
+1. **Main Menu Navigation**
+2. **Notepad Functionality**:
+   - Adding new notes.
+   - Retrieving notes by date.
+   - Viewing all notes.
+3. **Password Management**:
+   - Saving passwords with encryption.
+   - Viewing encrypted passwords.
+   - Decrypting passwords.
+   - Updating and deleting passwords.
+   - Generating random passwords.
+4. **RSA Key Generation and Loading**:
+   - RSA key generation (private/public).
+   - Loading existing keys.
+5. **Error Handling**:
+   - Invalid inputs.
+   - Failed decryption.
+   - Non-existent files for loading data.
+
+---
+
+### **3. Testing Environment**
+
+- **Operating System**: Windows, Linux, or macOS
+- **Python version**: 3.x
+- **Dependencies**: `colorama`, `cryptography`, `pickle`, `playsound`
+- **Test Data**: Use dummy data for notes and passwords.
+
+---
+
+### **4. Functional Test Cases**
+
+#### **4.1 Main Menu Navigation**
+
+| Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
+|---------|------------------|-------|-----------------|---------------|--------|
+| TC-001  | Verify main menu navigation | Run the app, select 'yes' to start, choose notepad or password menu | Should correctly navigate to Notepad or Password menu |  | Pass/Fail |
+
+#### **4.2 Notepad Functionality**
+
+| Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
+|---------|------------------|-------|-----------------|---------------|--------|
+| TC-002  | Add a new note | 1. Go to notepad menu <br> 2. Choose "Add New Note" <br> 3. Enter a note | Note should be saved and timestamped | | Pass/Fail |
+| TC-003  | Retrieve notes by date | 1. Add multiple notes with different timestamps <br> 2. Choose "Retrieve Notes by Date" <br> 3. Enter a specific date | Notes from the selected date should be displayed | | Pass/Fail |
+| TC-004  | View all saved notes | 1. Add multiple notes <br> 2. Choose "View All Notes" | All notes should be displayed with timestamps | | Pass/Fail |
+
+#### **4.3 Password Management**
+
+| Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
+|---------|------------------|-------|-----------------|---------------|--------|
+| TC-005  | Save a password | 1. Enter master password <br> 2. Choose "Save Password" <br> 3. Enter site and password | Password should be encrypted and saved | | Pass/Fail |
+| TC-006  | View encrypted password | 1. Save a password <br> 2. Choose "View Password" | The encrypted password should be displayed | | Pass/Fail |
+| TC-007  | Decrypt a password | 1. Save a password <br> 2. Choose "View Password" and opt to decrypt <br> 3. Enter correct master password | The decrypted password should be displayed | | Pass/Fail |
+| TC-008  | Generate random password | 1. Choose "Generate Random Password" <br> 2. Enter a length <br> 3. Save the generated password | Random password is generated and encrypted | | Pass/Fail |
+| TC-009  | Update an existing password | 1. Save a password <br> 2. Choose "Update Password" <br> 3. Enter old and new passwords | Password is updated successfully | | Pass/Fail |
+| TC-010  | Delete a saved password | 1. Save a password <br> 2. Choose "Delete Password" <br> 3. Confirm deletion | Password is deleted from the list | | Pass/Fail |
+
+#### **4.4 RSA Key Management**
+
+| Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
+|---------|------------------|-------|-----------------|---------------|--------|
+| TC-011  | Generate RSA keys | 1. Run the app for the first time <br> 2. Check the existence of `private_key.pem` and `public_key.pem` | Both files should be generated in the directory | | Pass/Fail |
+| TC-012  | Load existing RSA keys | 1. Run the app again after generating the keys <br> 2. Check if keys are loaded properly | The app should load the existing keys without errors | | Pass/Fail |
+
+---
+
+### **5. Non-Functional Testing**
+
+#### **5.1 Performance Testing**
+- **Objective**: Ensure that saving, retrieving, and encrypting data is done efficiently.
+- **Test**: Add multiple notes/passwords and check for any significant delays.
+  
+#### **5.2 Usability Testing**
+- **Objective**: Ensure that the menu system and user prompts are clear and intuitive.
+- **Test**: Verify that users can navigate the menu without confusion and receive proper feedback on their actions.
+
+#### **5.3 Security Testing**
+- **Objective**: Ensure that RSA encryption and decryption are secure.
+- **Test**: Attempt to decrypt without the correct master password and confirm failure.
+
+#### **5.4 Compatibility Testing**
+- **Objective**: Test compatibility across Windows, macOS, and Linux.
+- **Test**: Run the application on different operating systems and ensure consistency.
+
+---
+
+### **6. Error Handling Test Cases**
+
+#### **6.1 Invalid Inputs**
+
+| Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
+|---------|------------------|-------|-----------------|---------------|--------|
+| TC-013  | Invalid date input for retrieving notes | 1. Go to retrieve notes <br> 2. Enter an invalid date | Error message should be displayed | | Pass/Fail |
+| TC-014  | Invalid option in menus | 1. Enter an invalid option in the menu | Error message should be displayed and prompt should reappear | | Pass/Fail |
+| TC-015  | Incorrect master password | 1. Try to decrypt a password with a wrong master password | Error message should be displayed and decryption should fail | | Pass/Fail |
+
+---
+
+### **7. Test Automation**
+
+If you are considering automating the tests, tools like **pytest** can be used for unit testing and automating key parts of the functionality (e.g., encryption/decryption, data retrieval). For end-to-end automation, libraries like **Selenium** (for GUI) and **unittest** can help simulate user interactions in terminal-based applications.
+
+---
+
+### **8. Acceptance Criteria**
+
+The application will be considered successfully tested if:
+
+- All functional test cases pass.
+- The RSA encryption and decryption system works as intended.
+- No critical issues arise in performance, usability, or security.
+
+---
+
+This test plan can be adapted to more complex scenarios, but it provides a comprehensive structure for ensuring the core functionalities work correctly.
 
 ## Record of Tasks
 
