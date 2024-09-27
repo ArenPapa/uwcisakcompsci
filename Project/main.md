@@ -134,7 +134,7 @@ This test plan will cover:
 | Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
 |---------|------------------|-------|-----------------|---------------|--------|
 | TC-005  | Save a password | 1. Enter master password <br> 2. Choose "Save Password" <br> 3. Enter site and password | Password should be encrypted and saved |Pass| Pass/Fail |
-| TC-006  | View encrypted password | 1. Save a password <br> 2. Choose "View Password" | The encrypted password should be displayed | | Pass/Fail |
+| TC-006  | View encrypted password | 1. Save a password <br> 2. Choose "View Password" | The encrypted password should be displayed |Pass | Pass/Fail |
 | TC-007  | Decrypt a password | 1. Save a password <br> 2. Choose "View Password" and opt to decrypt <br> 3. Enter correct master password | The decrypted password should be displayed |Pass| Pass/Fail |
 | TC-008  | Generate random password | 1. Choose "Generate Random Password" <br> 2. Enter a length <br> 3. Save the generated password | Random password is generated and encrypted |Pass| Pass/Fail |
 | TC-009  | Update an existing password | 1. Save a password <br> 2. Choose "Update Password" <br> 3. Enter old and new passwords | Password is updated successfully |Pass| Pass/Fail |
