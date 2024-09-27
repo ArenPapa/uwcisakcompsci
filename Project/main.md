@@ -119,33 +119,33 @@ This test plan will cover:
 
 | Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
 |---------|------------------|-------|-----------------|---------------|--------|
-| TC-001  | Verify main menu navigation | Run the app, select 'yes' to start, choose notepad or password menu | Should correctly navigate to Notepad or Password menu |  | Pass/Fail |
+| TC-001  | Verify main menu navigation | Run the app, select 'yes' to start, choose notepad or password menu | Should correctly navigate to Notepad or Password menu | Pass | Pass/Fail |
 
 #### **4.2 Notepad Functionality**
 
 | Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
 |---------|------------------|-------|-----------------|---------------|--------|
-| TC-002  | Add a new note | 1. Go to notepad menu <br> 2. Choose "Add New Note" <br> 3. Enter a note | Note should be saved and timestamped | | Pass/Fail |
-| TC-003  | Retrieve notes by date | 1. Add multiple notes with different timestamps <br> 2. Choose "Retrieve Notes by Date" <br> 3. Enter a specific date | Notes from the selected date should be displayed | | Pass/Fail |
-| TC-004  | View all saved notes | 1. Add multiple notes <br> 2. Choose "View All Notes" | All notes should be displayed with timestamps | | Pass/Fail |
+| TC-002  | Add a new note | 1. Go to notepad menu <br> 2. Choose "Add New Note" <br> 3. Enter a note | Note should be saved and timestamped |Pass | Pass/Fail |
+| TC-003  | Retrieve notes by date | 1. Add multiple notes with different timestamps <br> 2. Choose "Retrieve Notes by Date" <br> 3. Enter a specific date | Notes from the selected date should be displayed |Pass| Pass/Fail |
+| TC-004  | View all saved notes | 1. Add multiple notes <br> 2. Choose "View All Notes" | All notes should be displayed with timestamps |Pass| Pass/Fail |
 
 #### **4.3 Password Management**
 
 | Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
 |---------|------------------|-------|-----------------|---------------|--------|
-| TC-005  | Save a password | 1. Enter master password <br> 2. Choose "Save Password" <br> 3. Enter site and password | Password should be encrypted and saved | | Pass/Fail |
+| TC-005  | Save a password | 1. Enter master password <br> 2. Choose "Save Password" <br> 3. Enter site and password | Password should be encrypted and saved |Pass| Pass/Fail |
 | TC-006  | View encrypted password | 1. Save a password <br> 2. Choose "View Password" | The encrypted password should be displayed | | Pass/Fail |
-| TC-007  | Decrypt a password | 1. Save a password <br> 2. Choose "View Password" and opt to decrypt <br> 3. Enter correct master password | The decrypted password should be displayed | | Pass/Fail |
-| TC-008  | Generate random password | 1. Choose "Generate Random Password" <br> 2. Enter a length <br> 3. Save the generated password | Random password is generated and encrypted | | Pass/Fail |
-| TC-009  | Update an existing password | 1. Save a password <br> 2. Choose "Update Password" <br> 3. Enter old and new passwords | Password is updated successfully | | Pass/Fail |
-| TC-010  | Delete a saved password | 1. Save a password <br> 2. Choose "Delete Password" <br> 3. Confirm deletion | Password is deleted from the list | | Pass/Fail |
+| TC-007  | Decrypt a password | 1. Save a password <br> 2. Choose "View Password" and opt to decrypt <br> 3. Enter correct master password | The decrypted password should be displayed |Pass| Pass/Fail |
+| TC-008  | Generate random password | 1. Choose "Generate Random Password" <br> 2. Enter a length <br> 3. Save the generated password | Random password is generated and encrypted |Pass| Pass/Fail |
+| TC-009  | Update an existing password | 1. Save a password <br> 2. Choose "Update Password" <br> 3. Enter old and new passwords | Password is updated successfully |Pass| Pass/Fail |
+| TC-010  | Delete a saved password | 1. Save a password <br> 2. Choose "Delete Password" <br> 3. Confirm deletion | Password is deleted from the list |Pass| Pass/Fail |
 
 #### **4.4 RSA Key Management**
 
 | Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
 |---------|------------------|-------|-----------------|---------------|--------|
-| TC-011  | Generate RSA keys | 1. Run the app for the first time <br> 2. Check the existence of `private_key.pem` and `public_key.pem` | Both files should be generated in the directory | | Pass/Fail |
-| TC-012  | Load existing RSA keys | 1. Run the app again after generating the keys <br> 2. Check if keys are loaded properly | The app should load the existing keys without errors | | Pass/Fail |
+| TC-011  | Generate RSA keys | 1. Run the app for the first time <br> 2. Check the existence of `private_key.pem` and `public_key.pem` | Both files should be generated in the directory |Pass | Pass/Fail |
+| TC-012  | Load existing RSA keys | 1. Run the app again after generating the keys <br> 2. Check if keys are loaded properly | The app should load the existing keys without errors |Pass | Pass/Fail |
 
 ---
 
@@ -175,9 +175,9 @@ This test plan will cover:
 
 | Test ID | Test Description | Steps | Expected Result | Actual Result | Status |
 |---------|------------------|-------|-----------------|---------------|--------|
-| TC-013  | Invalid date input for retrieving notes | 1. Go to retrieve notes <br> 2. Enter an invalid date | Error message should be displayed | | Pass/Fail |
-| TC-014  | Invalid option in menus | 1. Enter an invalid option in the menu | Error message should be displayed and prompt should reappear | | Pass/Fail |
-| TC-015  | Incorrect master password | 1. Try to decrypt a password with a wrong master password | Error message should be displayed and decryption should fail | | Pass/Fail |
+| TC-013  | Invalid date input for retrieving notes | 1. Go to retrieve notes <br> 2. Enter an invalid date | Error message should be displayed |Pass | Pass/Fail |
+| TC-014  | Invalid option in menus | 1. Enter an invalid option in the menu | Error message should be displayed and prompt should reappear |Pass | Pass/Fail |
+| TC-015  | Incorrect master password | 1. Try to decrypt a password with a wrong master password | Error message should be displayed and decryption should fail |Pass | Pass/Fail |
 
 ---
 
