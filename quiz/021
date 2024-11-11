@@ -1,0 +1,19 @@
+,,py 
+
+    import numpy as np
+    import matplotlib.pyplot as plt
+    
+    # Generate 100 values of x in the interval -10 < x < 10
+    x_values = np.linspace(-10, 10, 100)
+    # Compute y values based on the given formula
+    y_values = 2 * (x_values + 5) ** 2
+    
+    # Plot the graph
+    plt.figure(figsize=(10, 6))
+    plt.plot(x_values, y_values, color='blue', label='y = 2(x + 5)^2')
+    plt.title('Graph of y = 2(x + 5)^2')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
